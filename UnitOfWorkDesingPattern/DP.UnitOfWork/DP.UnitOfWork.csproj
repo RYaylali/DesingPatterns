@@ -24,6 +24,9 @@
     <ProjectReference Include="..\..\DP.Business\DP.Business.csproj" />
     <ProjectReference Include="..\..\DP.DataAccess\DP.DataAccess.csproj" />
     <ProjectReference Include="..\..\DP.EntityLayer\DP.EntityLayer.csproj" />
+    <ProjectReference Include="..\DP.Business\DP.Business.csproj" />
+    <ProjectReference Include="..\DP.DataAccess\DP.DataAccess.csproj" />
+    <ProjectReference Include="..\DP.Entity\DP.Entity.csproj" />
   </ItemGroup>
 
 </Project>

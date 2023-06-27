@@ -1,5 +1,5 @@
 ﻿using DP.Business.Abstract;
-using DP.EntityLayer.Concrete;
+using DP.Entity.Concrete;
 using DP.UnitOfWork.Models;
 using Microsoft.AspNetCore.Mvc;
 
