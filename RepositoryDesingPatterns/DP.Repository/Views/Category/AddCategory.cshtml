@@ -1,0 +1,11 @@
+﻿@using RepositoryDP.EntityLayer.Concrete;
+@model Category
+@{
+    Layout = null;
+}
+<form method="post">
+    <label>Kategori Adı</label>
+    <input type="text" asp-for="CategoryName" class="form-control" />
+    <br />
+    <button class="btn btnbtn-danger">Ekle</button>
+</form>

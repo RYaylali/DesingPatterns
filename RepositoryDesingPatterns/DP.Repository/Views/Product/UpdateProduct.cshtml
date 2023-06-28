@@ -1,0 +1,23 @@
+﻿@using RepositoryDP.EntityLayer.Concrete;
+@model Product
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<form method="post">
+    <input type="hidden" asp-for="ProductID" />
+    <label>Ürün Adı</label>
+    <input type="text" asp-for="ProductName" class="form-control" />
+    <br />
+    <label>Stok</label>
+    <input type="text" asp-for="ProductStock" class="form-control" />
+    <br />
+    <label>Fiyat</label>
+    <input type="text" asp-for="ProductPrice" class="form-control" />
+    <br />
+    <label>Ürün Adı</label>
+    @Html.DropDownListFor(x=>x.CategoryID,(List<SelectListItem>)ViewBag.v,new {@class="form-control"})
+    <br />
+    <button class="btn btnbtn-danger">Güncelle</button>
+</form>
