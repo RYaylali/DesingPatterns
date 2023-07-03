@@ -1,0 +1,26 @@
+﻿@using DP.MediatorDesignPattern.MediatorPattern.Commands;
+@model CreateProductCommand;
+@{
+	Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+	<form method="post">
+		<label>Ürün Adı</label>
+		<input type="text" asp-for="ProductName" class="form-control" />
+		<br>
+		<label>Ürün Fiyatı</label>
+		<input type="text" asp-for="ProductPrice" class="form-control" />
+		<br>
+		<label>Ürün Stok Tipi</label>
+		<input type="text" asp-for="ProductStockType" class="form-control" />
+		<br>
+		<label>Ürün Stoğu</label>
+		<input type="text" asp-for="ProductStock" class="form-control" />
+		<br>
+		<label>Ürün Kategorisi</label>
+		<input type="text" asp-for="ProductCategory" class="form-control" />
+		<br>
+		<button class="btn btn-primary">Ekle</button>
+	</form>
+</div>

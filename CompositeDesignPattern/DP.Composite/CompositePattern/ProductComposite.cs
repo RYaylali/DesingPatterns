@@ -7,14 +7,12 @@ namespace DP.Composite.CompositePattern
         public int Id { get; set; }
         public string Name { get; set; }
         private List<IComponent> _components;
-
         public ProductComposite(int ıd, string name)
         {
             Id = ıd;
             Name = name;
             _components = new List<IComponent>();
         }
-
         public ICollection<IComponent> Components => _components;
         public  void Add(IComponent component)
         {
@@ -32,8 +30,6 @@ namespace DP.Composite.CompositePattern
             stringBuilder.Append("</ul>");
             return stringBuilder.ToString();
         }
-     
-
         public int TotalCount()
         {
            return _components.Sum(x => x.TotalCount());

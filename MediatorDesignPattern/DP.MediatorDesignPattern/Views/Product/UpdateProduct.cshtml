@@ -1,0 +1,29 @@
+﻿@using DP.MediatorDesignPattern.MediatorPattern.Result;
+@model UpdateProductByIdQueryResult;
+@{
+	Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+	<form method="post">
+		<label>Ürün ID</label>
+		<input type="text" asp-for="ProductID" class="form-control" />
+		<br>
+		<label>Ürün Adı</label>
+		<input type="text" asp-for="ProductName" class="form-control" />
+		<br>
+		<label>Ürün Fiyatı</label>
+		<input type="text" asp-for="ProductPrice" class="form-control" />
+		<br>
+		<label>Ürün Stok Tipi</label>
+		<input type="text" asp-for="ProductStockType" class="form-control" />
+		<br>
+		<label>Ürün Stoğu</label>
+		<input type="text" asp-for="ProductStock" class="form-control" />
+		<br>
+		<label>Ürün Kategorisi</label>
+		<input type="text" asp-for="ProductCategory" class="form-control" />
+		<br>
+		<button class="btn btn-primary">Güncelle</button>
+	</form>
+</div>
