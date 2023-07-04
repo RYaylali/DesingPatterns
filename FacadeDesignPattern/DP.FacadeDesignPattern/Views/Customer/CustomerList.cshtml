@@ -1,0 +1,23 @@
+﻿@using DP.FacadeDesignPattern.DAL;
+@model List<Customer>
+@{
+    Layout = "~/Views/Shared/_FacadeLayout.cshtml";
+}
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Müşteri Adı</th>
+        <th>Soyadı</th>
+        <th>Şehir</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CustomerID</td>
+            <td>@item.CustomerName</td>
+            <td>@item.CustomerSurname</td>
+            <td>@item.CustomerCity</td>
+        </tr>
+    }
+</table>
+<a href="/Customer/AddNewCustomer/" class="btn btn-info">Ekle</a>

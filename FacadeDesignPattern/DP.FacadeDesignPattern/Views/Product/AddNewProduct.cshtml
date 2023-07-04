@@ -1,0 +1,23 @@
+﻿@using DP.FacadeDesignPattern.DAL;
+@model Product
+@{
+    ViewData["Title"] = "AddNewProduct";
+    Layout = "~/Views/Shared/_FacadeLayout.cshtml";
+}
+
+<h1>AddNewProduct</h1>
+<form method="post">
+    <label>Ürün Adı</label>
+    <input type="text" asp-for="ProductName" class="form-control" />
+    <br />
+    <label>Fiyat</label>
+    <input type="text" asp-for="ProductPrice" class="form-control" />
+    <br />
+    <label>Stok</label>
+    <input type="text" asp-for="ProductStock" class="form-control" />
+    <br />
+    <label>Kategori</label>
+    <input type="text" asp-for="ProductCategory" class="form-control" />
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+</form>
